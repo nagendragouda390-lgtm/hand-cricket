@@ -12,16 +12,17 @@
 
     <h2>Score: {{ score }}</h2>
 
-    <p>Select your run</p>
+    <h3>Computer : {{ computer }}</h3>
+
+    <p>{{ message }}</p>
 
     <div class="buttons">
-        <button>0</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
+        {% for i in range(7) %}
+            <a href = "/play/{{ i }}">
+                <button>{{ i }}</button>
+            </a>
+        {% endfor %}
+
     </div>
 
 </div>
