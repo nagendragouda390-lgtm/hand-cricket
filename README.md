@@ -3,4 +3,6 @@
 # website
 [enjoy playing cricket](https://hand-cricket-k1vc.onrender.com/)
 
-you can test your luck by this app
+# source code 
+check game.py
+i
