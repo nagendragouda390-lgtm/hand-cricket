@@ -27,12 +27,12 @@ def play(user):
     
     computer = random.randint(0,6)
 
-if user == computer:
-    out = True
-    return redirect("/result")
-score += user
+    if user == computer:
+        out = True
+        return redirect("/result")
+    score += user
 
-return render_template("game.html", computer=computer, message="Not Out")
+    return render_template("game.html", computer=computer, message="Not Out")
 
 @app.route("/result")
 def result():
