@@ -5,4 +5,4 @@
 
 # source code 
 check game.py
-i
+[game.py](https://github.com/nagendragouda390-lgtm/hand-cricket/blob/main/game.py)
