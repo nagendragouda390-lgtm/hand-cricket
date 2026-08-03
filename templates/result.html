@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Match Result</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
+<div class="pitch-strip"></div>
+
 <div class="container">
+    <p class="out-banner">HOWZAT!</p>
+    <p class="out-sub">You're Out</p>
 
-    <h1>🏏 OUT!</h1>
+    <div class="final-score">
+        <p class="label">Final Score</p>
+        <p class="value">{{ score }}</p>
+    </div>
 
-    <h2>Your Score : {{ score }}</h2>
-
-    <a href="/">
+    <a class="bat-btn" href="/">
         <button>Play Again</button>
     </a>
-
 </div>
 
 </body>

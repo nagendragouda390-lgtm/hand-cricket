@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hand Cricket</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
+<div class="pitch-strip"></div>
+
 <div class="container">
-    <h1>🏏 Hand Cricket</h1>
+    <p class="eyebrow">Under the Lights &middot; One Wicket</p>
+    <h1><span class="ball-emoji">🏏</span> Hand Cricket</h1>
+    <p class="tagline">Pick a number, back your instinct. Match the computer's throw and you're walking back to the pavilion.</p>
 
-    <p>Welcome to Hand Cricket.</p>
-
-    <a href="/game">
-        <button>Start Match</button>
+    <a class="bat-btn" href="/game">
+        <button>Play Ball</button>
     </a>
 </div>
 

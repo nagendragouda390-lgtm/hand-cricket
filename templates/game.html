@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hand Cricket</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
+<div class="pitch-strip"></div>
+
 <div class="container">
+    <p class="eyebrow">Live &middot; 1st Innings</p>
+    <h1><span class="ball-emoji">🏏</span> Hand Cricket</h1>
 
-    <h1>🏏 Hand Cricket</h1>
+    <div class="scoreboard">
+        <div class="cell">
+            <p class="label">You</p>
+            <p class="value">{{ score }}</p>
+        </div>
+        <div class="divider"></div>
+        <div class="cell">
+            <p class="label">Bowler</p>
+            <p class="value">{{ computer }}</p>
+        </div>
+    </div>
 
-    <h2>Score: {{ score }}</h2>
-
-    <h3>Computer : {{ computer }}</h3>
-
-    <p>{{ message }}</p>
+    <p class="ticker">{{ message }}</p>
 
     <div class="buttons">
         {% for i in range(7) %}
-            <a href = "/play/{{ i }}">
+            <a href="/play/{{ i }}">
                 <button>{{ i }}</button>
             </a>
         {% endfor %}
-
     </div>
-
 </div>
 
 </body>
